@@ -1,0 +1,880 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第五节：Hello React · web 教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="wentoos">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-base16-ateliersulphurpool.light.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="6-JSX.html" />
+    
+    
+    <link rel="prev" href="4-webpack.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"wentoos/my-note","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前端
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一章 Linux基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Linux/1-linux.html">
+            
+                <a href="../Linux/1-linux.html">
+            
+                    
+                    第一节：Linux 命令行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../Linux/2-file-sys.html">
+            
+                <a href="../Linux/2-file-sys.html">
+            
+                    
+                    第二节：文件系统结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../Linux/3-file-man.html">
+            
+                <a href="../Linux/3-file-man.html">
+            
+                    
+                    第三节：文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../Linux/4-atom.html">
+            
+                <a href="../Linux/4-atom.html">
+            
+                    
+                    第四节：Atom 编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../Linux/5-sublime.html">
+            
+                <a href="../Linux/5-sublime.html">
+            
+                    
+                    第五节：Sublime 编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../Linux/6-github.html">
+            
+                <a href="../Linux/6-github.html">
+            
+                    
+                    第六节：学习 Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../Linux/7-hello-git.html">
+            
+                <a href="../Linux/7-hello-git.html">
+            
+                    
+                    第七节：你好 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../Linux/8-local-git.html">
+            
+                <a href="../Linux/8-local-git.html">
+            
+                    
+                    第八节：Git本地工作流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../Linux/9-push.html">
+            
+                <a href="../Linux/9-push.html">
+            
+                    
+                    第九节：上传代码到Github.com
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../Linux/10-gitbook.html">
+            
+                <a href="../Linux/10-gitbook.html">
+            
+                    
+                    第十节：学习 Gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../Linux/11-markdown.html">
+            
+                <a href="../Linux/11-markdown.html">
+            
+                    
+                    第十一节：Markdown 语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二章 ES6语法基础</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../ES6/1-hello-es6.html">
+            
+                <a href="../ES6/1-hello-es6.html">
+            
+                    
+                    第一节：Hello ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../ES6/2-let.html">
+            
+                <a href="../ES6/2-let.html">
+            
+                    
+                    第二节：Let
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../ES6/3-const.html">
+            
+                <a href="../ES6/3-const.html">
+            
+                    
+                    第三节：Const
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../ES6/4-Destructuring.html">
+            
+                <a href="../ES6/4-Destructuring.html">
+            
+                    
+                    第四节：变量的解构赋值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../ES6/5-function.html">
+            
+                <a href="../ES6/5-function.html">
+            
+                    
+                    第五节：箭头函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../ES6/6-string.html">
+            
+                <a href="../ES6/6-string.html">
+            
+                    
+                    第六节：字符串的扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../ES6/7-class.html">
+            
+                <a href="../ES6/7-class.html">
+            
+                    
+                    第七节：Class的基本语法与继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../ES6/8-Module.html">
+            
+                <a href="../ES6/8-Module.html">
+            
+                    
+                    第八节：模块的基本语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三章 React</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="1-react-setup.html">
+            
+                <a href="1-react-setup.html">
+            
+                    
+                    第一节：React环境快速配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="2-create-react-app.html">
+            
+                <a href="2-create-react-app.html">
+            
+                    
+                    第二节：React环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="3-npm.html">
+            
+                <a href="3-npm.html">
+            
+                    
+                    第三节：npm语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="4-webpack.html">
+            
+                <a href="4-webpack.html">
+            
+                    
+                    第四节：Webpack配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.5" data-path="5-hello-react.html">
+            
+                <a href="5-hello-react.html">
+            
+                    
+                    第五节：Hello React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="6-JSX.html">
+            
+                <a href="6-JSX.html">
+            
+                    
+                    第六节：JSX语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="7-render.html">
+            
+                <a href="7-render.html">
+            
+                    
+                    第七节：组件的Render方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="8-component.html">
+            
+                <a href="8-component.html">
+            
+                    
+                    第八节：组件的组合、嵌套和组件树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="9-onclick.html">
+            
+                <a href="9-onclick.html">
+            
+                    
+                    第九节：事件监听
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="10-state.html">
+            
+                <a href="10-state.html">
+            
+                    
+                    第十节：组件的State和setState
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="12-props.html">
+            
+                <a href="12-props.html">
+            
+                    
+                    第十一节：组件的props
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="11-shop.md">
+            
+                <span>
+            
+                    
+                    第十二节：案例（购物车）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="13-prop-types.html">
+            
+                <a href="13-prop-types.html">
+            
+                    
+                    第十三节：数据类型的检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="14-Card.html">
+            
+                <a href="14-Card.html">
+            
+                    
+                    第十四节：案例（Card）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="15-dom.html">
+            
+                <a href="15-dom.html">
+            
+                    
+                    第十五节：React中获取DOM节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="16-lifecycle.html">
+            
+                <a href="16-lifecycle.html">
+            
+                    
+                    第十六节：生命周期函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.17" data-path="17-Context.html">
+            
+                <a href="17-Context.html">
+            
+                    
+                    第十七节：Context
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >第五节：Hello React</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#hello-react">Hello React</a></li><ul><li><a href="#&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x9879;&#x76EE;react-hello">&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x9879;&#x76EE;react-hello</a></li><li><a href="#&#x542F;&#x52A8;&#x9879;&#x76EE;">&#x542F;&#x52A8;&#x9879;&#x76EE;</a></li><li><a href="#&#x9000;&#x51FA;&#x9879;&#x76EE;">&#x9000;&#x51FA;&#x9879;&#x76EE;</a></li><li><a href="#&#x4FEE;&#x6539;&#x9879;&#x76EE;">&#x4FEE;&#x6539;&#x9879;&#x76EE;</a></li></ul></ul></div><a href="#hello-react" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><!-- toc -->
+<ul>
+<li><a href="#hello-react">Hello React</a><ul>
+<li><a href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E4%B8%80%E4%B8%AA%E9%A1%B9%E7%9B%AEreact-hello">&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x9879;&#x76EE;react-hello</a></li>
+<li><a href="#%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9B%AE">&#x542F;&#x52A8;&#x9879;&#x76EE;</a></li>
+<li><a href="#%E9%80%80%E5%87%BA%E9%A1%B9%E7%9B%AE">&#x9000;&#x51FA;&#x9879;&#x76EE;</a></li>
+<li><a href="#%E4%BF%AE%E6%94%B9%E9%A1%B9%E7%9B%AE">&#x4FEE;&#x6539;&#x9879;&#x76EE;</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<h1 id="hello-react"><a name="hello-react" class="anchor-navigation-ex-anchor" href="#hello-react"><i class="fa fa-link" aria-hidden="true"></i></a>Hello React</h1>
+<h2 id="&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x9879;&#x76EE;react-hello"><a name="&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x9879;&#x76EE;react-hello" class="anchor-navigation-ex-anchor" href="#&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x9879;&#x76EE;react-hello"><i class="fa fa-link" aria-hidden="true"></i></a>&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x9879;&#x76EE;react-hello</h2>
+<pre class="language-"><code>create-react-app react-hello
+</code></pre><p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x4E0D;&#x8981;&#x51FA;&#x73B0;&#x9879;&#x76EE;&#x5957;&#x9879;&#x76EE;&#xFF0C;&#x4ED3;&#x5E93;&#x5957;&#x4ED3;&#x5E93;&#x3002;&#x9879;&#x76EE;&#x540D;&#x79F0;&#x4E0D;&#x8981;&#x53D6;&#x5305;&#x540D;&#xFF08;react...&#xFF09;&#x3002;</p>
+<h2 id="&#x542F;&#x52A8;&#x9879;&#x76EE;"><a name="&#x542F;&#x52A8;&#x9879;&#x76EE;" class="anchor-navigation-ex-anchor" href="#&#x542F;&#x52A8;&#x9879;&#x76EE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x542F;&#x52A8;&#x9879;&#x76EE;</h2>
+<pre class="language-"><code>npm start
+</code></pre><p>&#x6210;&#x529F;&#x542F;&#x52A8;&#x8BF4;&#x660E;&#x9879;&#x76EE;&#x6210;&#x529F;&#x521D;&#x59CB;&#x5316;</p>
+<h2 id="&#x9000;&#x51FA;&#x9879;&#x76EE;"><a name="&#x9000;&#x51FA;&#x9879;&#x76EE;" class="anchor-navigation-ex-anchor" href="#&#x9000;&#x51FA;&#x9879;&#x76EE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9000;&#x51FA;&#x9879;&#x76EE;</h2>
+<pre class="language-"><code>ctrl + C
+</code></pre><h2 id="&#x4FEE;&#x6539;&#x9879;&#x76EE;"><a name="&#x4FEE;&#x6539;&#x9879;&#x76EE;" class="anchor-navigation-ex-anchor" href="#&#x4FEE;&#x6539;&#x9879;&#x76EE;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4FEE;&#x6539;&#x9879;&#x76EE;</h2>
+<p>&#x5220;&#x9664;src&#x6587;&#x4EF6;&#x5939;&#x91CD;&#x65B0;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;src</p>
+<pre class="language-"><code>rm -rf src &amp;&amp; mkdir src
+</code></pre><p>&#x5728;src&#x4E0B;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;index.js&#x5E76;&#x8FD4;&#x56DE;&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x5939;</p>
+<pre class="language-"><code>cd src &amp;&amp; touch index.js &amp;&amp; cd ..
+</code></pre><p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x547D;&#x4EE4;&#x884C;&#x4E0B;&#x7684;&#x4F4D;&#x7F6E;</p>
+<p>&#x5C0F;&#x8D34;&#x58EB;&#xFF1A;<strong>console.dir()</strong> &#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</p>
+<p>&#x5728;index.js&#x4E2D;&#x5199;&#x5165;&#x4E0B;&#x9762;&#x4EE3;&#x7801;</p>
+<pre class="language-"><code>import React from &apos;react&apos;
+import ReactDOM from &apos;react-dom&apos;
+
+ReactDOM.render(<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Hello React<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>,document.getElementById(&apos;root&apos;))
+</code></pre><footer class="page-footer"><span class="copyright">Copyright &#xA9; wentoos.com 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2017-07-10 18:20:54
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="4-webpack.html" class="navigation navigation-prev " aria-label="Previous page: 第四节：Webpack配置">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="6-JSX.html" class="navigation navigation-next " aria-label="Next page: 第六节：JSX语法">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第五节：Hello React","level":"4.5","depth":1,"next":{"title":"第六节：JSX语法","level":"4.6","depth":1,"path":"content/React/6-JSX.md","ref":"./content/React/6-JSX.md","articles":[]},"previous":{"title":"第四节：Webpack配置","level":"4.4","depth":1,"path":"content/React/4-webpack.md","ref":"./content/React/4-webpack.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx@^3.1.0","donate@^1.0.2","local-video@^1.0.1","sitemap-general@^0.1.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","3-ba@^0.9.0"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © wentoos.com 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"emphasize":{},"ace":{},"github":{"url":"https://github.com/wentoos/my-note"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"donate":{"alipay":"https://zhangjikai.com/resource/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://zhangjikai.com/resource/weixin.png","wechatText":"微信打赏"},"sitemap-general":{"prefix":"http://gitbook.zhangjikai.com"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"github-buttons":{"repo":"wentoos/my-note","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"ff100361cdce95dd4c8fb96b4009f7bc"},"expandable-chapters-small":{},"local-video":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/wentoos/my-note/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","author":"wentoos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"web 教程","language":"zh-hans","output.name":"site","gitbook":"3.2.2","description":"记录学习之路"},"file":{"path":"content/React/5-hello-react.md","mtime":"2017-07-10T18:20:54.580Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-10T19:56:18.853Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-3-ba/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
