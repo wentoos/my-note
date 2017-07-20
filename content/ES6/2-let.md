@@ -13,7 +13,7 @@ let允许你声明一个作用域被限制在块级中的变量、语句或者�
 let实际上为 JavaScript 新增了块级作用域。
 （let被限制在大括号里{}）
 
-```
+```js
 function f1() {
   let n = 5;
   if (true) {
@@ -25,7 +25,7 @@ function f1() {
 
 let声明的变量只在它所在的代码块有效
 
-```es6
+```js
 {
   let a = 10;
   var b = 1;
@@ -37,7 +37,7 @@ b // 1
 
 ES6 允许块级作用域的任意嵌套且外层作用域无法读取内层作用域的变量
 
-```
+```js
 {
    {
     {let insane = 'Hello World'}
@@ -48,7 +48,7 @@ ES6 允许块级作用域的任意嵌套且外层作用域无法读取内层作�
 
 内层作用域可以定义外层作用域的同名变量
 
-```
+```js
 {
   let insane = 'Hello World';
   {let insane = 'Hello World'}
@@ -57,7 +57,7 @@ ES6 允许块级作用域的任意嵌套且外层作用域无法读取内层作�
 
 ## 不存在变量提升
 
-```
+```js
 // var 的情况
 console.log(foo); // 输出undefined
 var foo = 2;
@@ -69,7 +69,7 @@ let bar = 2;
 
 ## 暂时性死区
 
-```
+```js
 if (true) {
   // TDZ开始
   tmp = 'abc'; // ReferenceError
@@ -87,7 +87,7 @@ if (true) {
 
 let不允许在相同作用域内，重复声明同一个变量。
 
-```
+```js
 function () {
   let a = 10;
   var a = 1;
@@ -103,7 +103,7 @@ function () {
 
 因此，不能在函数内部重新声明参数。
 
-```
+```js
 function func(arg) {
   let arg; // 报错
 }

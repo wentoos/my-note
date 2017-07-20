@@ -15,7 +15,7 @@ Babel是一个广泛使用的ES6转码器，可以将 ES6 代码转为 ES5 代�
 <img src='http://upload-images.jianshu.io/upload_images/1504317-d020f21868e8e84c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240' alt="bable官网">
 
 ## Js的严格模式（Es5添加的）
-```
+```js
 "use strict";
 ```
 
