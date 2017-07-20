@@ -1,0 +1,1011 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第二节：String · web 教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="wentoos">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-xonokai.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-ace/ace.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-local-video/video-js.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Array.html" />
+    
+    
+    <link rel="prev" href="RegExp.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../../favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../favicon.ico' type="image/x-icon">
+    
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"wentoos/my-note","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前端
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第一章 Linux基础</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Linux/1-linux.html">
+            
+                <a href="../Linux/1-linux.html">
+            
+                    
+                    第一节：Linux 命令行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../Linux/2-file-sys.html">
+            
+                <a href="../Linux/2-file-sys.html">
+            
+                    
+                    第二节：文件系统结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../Linux/3-file-man.html">
+            
+                <a href="../Linux/3-file-man.html">
+            
+                    
+                    第三节：文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../Linux/4-atom.html">
+            
+                <a href="../Linux/4-atom.html">
+            
+                    
+                    第四节：Atom 编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../Linux/5-sublime.html">
+            
+                <a href="../Linux/5-sublime.html">
+            
+                    
+                    第五节：Sublime 编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../Linux/6-github.html">
+            
+                <a href="../Linux/6-github.html">
+            
+                    
+                    第六节：学习 Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../Linux/7-hello-git.html">
+            
+                <a href="../Linux/7-hello-git.html">
+            
+                    
+                    第七节：你好 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../Linux/8-local-git.html">
+            
+                <a href="../Linux/8-local-git.html">
+            
+                    
+                    第八节：Git本地工作流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../Linux/9-push.html">
+            
+                <a href="../Linux/9-push.html">
+            
+                    
+                    第九节：上传代码到Github.com
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../Linux/10-gitbook.html">
+            
+                <a href="../Linux/10-gitbook.html">
+            
+                    
+                    第十节：学习 Gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../Linux/11-markdown.html">
+            
+                <a href="../Linux/11-markdown.html">
+            
+                    
+                    第十一节：Markdown 语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第二章 ES6语法基础</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../ES6/1-hello-es6.html">
+            
+                <a href="../ES6/1-hello-es6.html">
+            
+                    
+                    第一节：Hello ES6
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../ES6/2-let.html">
+            
+                <a href="../ES6/2-let.html">
+            
+                    
+                    第二节：Let
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../ES6/3-const.html">
+            
+                <a href="../ES6/3-const.html">
+            
+                    
+                    第三节：Const
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../ES6/4-Destructuring.html">
+            
+                <a href="../ES6/4-Destructuring.html">
+            
+                    
+                    第四节：变量的解构赋值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../ES6/5-function.html">
+            
+                <a href="../ES6/5-function.html">
+            
+                    
+                    第五节：箭头函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../ES6/6-string.html">
+            
+                <a href="../ES6/6-string.html">
+            
+                    
+                    第六节：字符串的扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../ES6/7-class.html">
+            
+                <a href="../ES6/7-class.html">
+            
+                    
+                    第七节：Class的基本语法与继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../ES6/8-Module.html">
+            
+                <a href="../ES6/8-Module.html">
+            
+                    
+                    第八节：模块的基本语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第三章 React</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../React/1-react-setup.html">
+            
+                <a href="../React/1-react-setup.html">
+            
+                    
+                    第一节：React环境快速配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../React/2-create-react-app.html">
+            
+                <a href="../React/2-create-react-app.html">
+            
+                    
+                    第二节：React环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../React/3-npm.html">
+            
+                <a href="../React/3-npm.html">
+            
+                    
+                    第三节：npm语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../React/4-webpack.html">
+            
+                <a href="../React/4-webpack.html">
+            
+                    
+                    第四节：Webpack配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../React/5-hello-react.html">
+            
+                <a href="../React/5-hello-react.html">
+            
+                    
+                    第五节：Hello React
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="../React/6-JSX.html">
+            
+                <a href="../React/6-JSX.html">
+            
+                    
+                    第六节：JSX语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="../React/7-render.html">
+            
+                <a href="../React/7-render.html">
+            
+                    
+                    第七节：组件的Render方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="../React/8-component.html">
+            
+                <a href="../React/8-component.html">
+            
+                    
+                    第八节：组件的组合、嵌套和组件树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="../React/9-onclick.html">
+            
+                <a href="../React/9-onclick.html">
+            
+                    
+                    第九节：事件监听
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="../React/10-state.html">
+            
+                <a href="../React/10-state.html">
+            
+                    
+                    第十节：组件的State和setState
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" data-path="../React/12-props.html">
+            
+                <a href="../React/12-props.html">
+            
+                    
+                    第十一节：组件的props
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" data-path="../React/11-shop.md">
+            
+                <span>
+            
+                    
+                    第十二节：案例（购物车）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" data-path="../React/13-prop-types.html">
+            
+                <a href="../React/13-prop-types.html">
+            
+                    
+                    第十三节：数据类型的检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.14" data-path="../React/14-Card.html">
+            
+                <a href="../React/14-Card.html">
+            
+                    
+                    第十四节：案例（Card）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.15" data-path="../React/15-dom.html">
+            
+                <a href="../React/15-dom.html">
+            
+                    
+                    第十五节：React中获取DOM节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.16" data-path="../React/16-lifecycle.html">
+            
+                <a href="../React/16-lifecycle.html">
+            
+                    
+                    第十六节：生命周期函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.17" data-path="../React/17-Context.html">
+            
+                <a href="../React/17-Context.html">
+            
+                    
+                    第十七节：Context
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">第四章 Es3 - Es5</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="RegExp.html">
+            
+                <a href="RegExp.html">
+            
+                    
+                    第一节：RegExp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.2" data-path="string.html">
+            
+                <a href="string.html">
+            
+                    
+                    第二节：String
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="Array.html">
+            
+                <a href="Array.html">
+            
+                    
+                    第三节：Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="array-bianli.html">
+            
+                <a href="array-bianli.html">
+            
+                    
+                    第四节：Array遍历
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >第二节：String</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#string-&#x5B57;&#x7B26;&#x4E32;">string &#x5B57;&#x7B26;&#x4E32;</a></li><ul><li><a href="#&#x8BED;&#x6CD5;">&#x8BED;&#x6CD5;</a></li><li><a href="#string-&#x5C5E;&#x6027;">String &#x5C5E;&#x6027;</a></li><ul><li><a href="#stringprototype">String.prototype</a></li><li><a href="#stringlength">String.length</a></li></ul><li><a href="#string-&#x65B9;&#x6CD5;">String &#x65B9;&#x6CD5;</a></li></ul></ul></div><a href="#string-&#x5B57;&#x7B26;&#x4E32;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="string-&#x5B57;&#x7B26;&#x4E32;"><a name="string-&#x5B57;&#x7B26;&#x4E32;" class="anchor-navigation-ex-anchor" href="#string-&#x5B57;&#x7B26;&#x4E32;"><i class="fa fa-link" aria-hidden="true"></i></a>string &#x5B57;&#x7B26;&#x4E32;</h1>
+<p>String &#x5168;&#x5C40;&#x5BF9;&#x8C61;&#x662F;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x5E8F;&#x5217;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;</p>
+<h2 id="&#x8BED;&#x6CD5;"><a name="&#x8BED;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#&#x8BED;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BED;&#x6CD5;</h2>
+<pre class="language-"><code class="lang-js"><span class="token keyword">let</span> str<span class="token operator">=</span><span class="token string">&quot;string text&quot;</span>
+<span class="token keyword">let</span> str1<span class="token operator">=</span><span class="token string">&quot;&#x4E2D;&#x6587;/&#x6C49;&#x8BED;&quot;</span>
+<span class="token keyword">let</span> str2<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x8FD4;&#x56DE;&#x503C;&#xFF1A;{0: &quot;s&quot;, 1: &quot;t&quot;, 2: &quot;r&quot;, 3: &quot;i&quot;, 4: &quot;n&quot;, 5: &quot;g&quot;, 6: &quot; &quot;, 7: &quot;t&quot;, 8: &quot;e&quot;, 9: &quot;x&quot;, 10: &quot;t&quot;, length: 11, [[PrimitiveValue]]: &quot;string text&quot;}</span>
+</code></pre>
+<p><strong>&#x6CE8;&#x610F;</strong> &#x901A;&#x8FC7;new&#xFF0C;&#x5B83;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x521B;&#x5EFA;&#x7684; String &#x5BF9;&#x8C61;&#xFF0C;&#x5B58;&#x653E;&#x7684;&#x662F;&#x5B57;&#x7B26;&#x4E32; str2 &#x6216; str2 &#x7684;&#x5B57;&#x7B26;&#x4E32;&#x8868;&#x793A;
+&#x5F53;&#x4E0D;&#x7528; new  &#x65F6;&#xFF0C;&#x5B83;&#x53EA;&#x628A; str &#x8F6C;&#x6362;&#x6210;&#x539F;&#x59CB;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6307;&#x5411;&#x8FD9;&#x4E2A;string&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x8F6C;&#x6362;&#x540E;&#x7684;&#x503C;&#x3002;</p>
+<p><strong>&#x8FD8;&#x6709;&#x4ECE;es6&#x5F00;&#x59CB;</strong> &#x53EF;&#x4EE5;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x6A21;&#x677F;&#x4E66;&#x5199;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">let</span> str<span class="token operator">=</span><span class="token template-string"><span class="token string">`string text`</span></span>
+<span class="token keyword">let</span> str1<span class="token operator">=</span><span class="token template-string"><span class="token string">`&#x4E2D;&#x6587;/&#x6C49;&#x8BED;`</span></span>
+</code></pre>
+<p><em>&#x4E66;&#x5199;&#x65F6;&#x53EF;&#x80FD;&#x78B0;&#x5230;&#x7279;&#x522B;&#x957F;&#x7684;&#x5B57;&#x7B26;&#x4E32;</em> &#x53EF;&#x4EE5;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;&#x4E66;&#x5199;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">let</span> longString <span class="token operator">=</span> <span class="token string">&quot;This is a very long string which needs &quot;</span> <span class="token operator">+</span>
+                 <span class="token string">&quot;to wrap across multiple lines because &quot;</span> <span class="token operator">+</span>
+                 <span class="token string">&quot;otherwise my code is unreadable.&quot;</span><span class="token punctuation">;</span>
+</code></pre>
+<p><em>&#x6216;&#x8005;</em> &#x4F7F;&#x7528; <code>\</code> &#x5728;&#x6BCF;&#x884C;&#x672B;&#x5C3E;&#x4F7F;&#x7528;&#x53CD;&#x659C;&#x6760;&#x5B57;&#x7B26; <code>\</code>&#xFF0C;&#x4EE5;&#x6307;&#x793A;&#x5B57;&#x7B26;&#x4E32;&#x5C06;&#x5728;&#x4E0B;&#x4E00;&#x884C;&#x7EE7;&#x7EED;&#x3002;&#x786E;&#x4FDD;&#x53CD;&#x659C;&#x6760;&#x540E;&#x9762;&#x6CA1;&#x6709;&#x7A7A;&#x683C;&#x6216;&#x4EFB;&#x4F55;&#x9664;&#x6362;&#x884C;&#x7B26;&#x4E4B;&#x5916;&#x7684;&#x5B57;&#x7B26;&#x6216;&#x7F29;&#x8FDB;; &#x5426;&#x5219;&#x53CD;&#x659C;&#x6760;&#x5C06;&#x4E0D;&#x4F1A;&#x5DE5;&#x4F5C;&#x3002; &#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">let</span> longString <span class="token operator">=</span> <span class="token string">&quot;This is a very long string which needs \
+to wrap across multiple lines because \
+otherwise my code is unreadable.&quot;</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="string-&#x5C5E;&#x6027;"><a name="string-&#x5C5E;&#x6027;" class="anchor-navigation-ex-anchor" href="#string-&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>String &#x5C5E;&#x6027;</h2>
+<h3 id="stringprototype"><a name="stringprototype" class="anchor-navigation-ex-anchor" href="#stringprototype"><i class="fa fa-link" aria-hidden="true"></i></a>String.prototype</h3>
+<p>String.prototype &#x5C5E;&#x6027;&#x8868;&#x793A; String&#x539F;&#x578B;&#x5BF9;&#x8C61;&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; String.prototype.constructor &#x7528;&#x4E8E;&#x521B;&#x9020;&#x5BF9;&#x8C61;&#x7684;&#x539F;&#x578B;&#x5BF9;&#x8C61;&#x7684;&#x7279;&#x5B9A;&#x7684;&#x51FD;&#x6570;&#x3002;</p>
+<h3 id="stringlength"><a name="stringlength" class="anchor-navigation-ex-anchor" href="#stringlength"><i class="fa fa-link" aria-hidden="true"></i></a>String.length</h3>
+<p>length&#x5C5E;&#x6027;&#x8868;&#x793A;&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#x957F;&#x5EA6;</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">let</span> str <span class="token operator">=</span><span class="token string">&apos;wentoos&apos;</span>
+str<span class="token punctuation">.</span>length<span class="token comment" spellcheck="true">// &#x8FD4;&#x56DE;&#x503C;&#xFF1A;7</span>
+</code></pre>
+<h2 id="string-&#x65B9;&#x6CD5;"><a name="string-&#x65B9;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#string-&#x65B9;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>String &#x65B9;&#x6CD5;</h2>
+<p>&#x5E38;&#x7528;&#x7684;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token function">charAt</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x8FD4;&#x56DE;&#x5728;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x7684;&#x5B57;&#x7B26;&#x3002;</span>
+<span class="token function">concat</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x8FDE;&#x63A5;&#x5B57;&#x7B26;&#x4E32;&#x3002;</span>
+<span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x68C0;&#x7D22;&#x5B57;&#x7B26;&#x4E32;&#x3002;</span>
+<span class="token function">lastIndexOf</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x4ECE;&#x540E;&#x5411;&#x524D;&#x641C;&#x7D22;&#x5B57;&#x7B26;&#x4E32;&#x3002;</span>
+<span class="token function">match</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x5339;&#x914D;&#x3002;</span>
+<span class="token function">replace</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x66FF;&#x6362;&#x4E0E;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5339;&#x914D;&#x7684;&#x5B50;&#x4E32;&#x3002;</span>
+<span class="token function">search</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x68C0;&#x7D22;&#x4E0E;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x76F8;&#x5339;&#x914D;&#x7684;&#x503C;&#x3002;</span>
+<span class="token function">slice</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x63D0;&#x53D6;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x7247;&#x65AD;&#xFF0C;&#x5E76;&#x5728;&#x65B0;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x8FD4;&#x56DE;&#x88AB;&#x63D0;&#x53D6;&#x7684;&#x90E8;&#x5206;&#x3002;</span>
+<span class="token function">small</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x4F7F;&#x7528;&#x5C0F;&#x5B57;&#x53F7;&#x6765;&#x663E;&#x793A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</span>
+<span class="token function">split</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x628A;&#x5B57;&#x7B26;&#x4E32;&#x5206;&#x5272;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x7EC4;&#x3002;</span>
+<span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#x3002;</span>
+<span class="token function">sub</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x628A;&#x5B57;&#x7B26;&#x4E32;&#x663E;&#x793A;&#x4E3A;&#x4E0B;&#x6807;&#x3002;</span>
+<span class="token function">substr</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x4ECE;&#x8D77;&#x59CB;&#x7D22;&#x5F15;&#x53F7;&#x63D0;&#x53D6;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x6307;&#x5B9A;&#x6570;&#x76EE;&#x7684;&#x5B57;&#x7B26;&#x3002;</span>
+<span class="token function">substring</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x63D0;&#x53D6;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x4E24;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x7D22;&#x5F15;&#x53F7;&#x4E4B;&#x95F4;&#x7684;&#x5B57;&#x7B26;&#x3002;</span>
+<span class="token function">toLocaleLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x628A;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x4E3A;&#x5C0F;&#x5199;&#x3002;</span>
+<span class="token function">toLocaleUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x628A;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x4E3A;&#x5927;&#x5199;&#x3002;</span>
+<span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x628A;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x4E3A;&#x5C0F;&#x5199;&#x3002;</span>
+<span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x628A;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x4E3A;&#x5927;&#x5199;&#x3002;</span>
+</code></pre>
+<p>&#x4E0D;&#x5E38;&#x7528;&#x7684;&#xFF1A;</p>
+<pre class="language-"><code class="lang-js"><span class="token function">toSource</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x4EE3;&#x8868;&#x5BF9;&#x8C61;&#x7684;&#x6E90;&#x4EE3;&#x7801;&#x3002;</span>
+<span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x8FD4;&#x56DE;&#x67D0;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5BF9;&#x8C61;&#x7684;&#x539F;&#x59CB;&#x503C;&#x3002;</span>
+<span class="token function">anchor</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x521B;&#x5EFA; HTML &#x951A;&#x3002;</span>
+<span class="token function">big</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x7528;&#x5927;&#x53F7;&#x5B57;&#x4F53;&#x663E;&#x793A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</span>
+<span class="token function">blink</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x663E;&#x793A;&#x95EA;&#x52A8;&#x5B57;&#x7B26;&#x4E32;&#x3002;</span>
+<span class="token function">bold</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x4F7F;&#x7528;&#x7C97;&#x4F53;&#x663E;&#x793A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</span>
+<span class="token function">charCodeAt</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x8FD4;&#x56DE;&#x5728;&#x6307;&#x5B9A;&#x7684;&#x4F4D;&#x7F6E;&#x7684;&#x5B57;&#x7B26;&#x7684; Unicode &#x7F16;&#x7801;&#x3002;</span>
+<span class="token function">fixed</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x4EE5;&#x6253;&#x5B57;&#x673A;&#x6587;&#x672C;&#x663E;&#x793A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</span>
+<span class="token function">fontcolor</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x7684;&#x989C;&#x8272;&#x6765;&#x663E;&#x793A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</span>
+<span class="token function">fontsize</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x7684;&#x5C3A;&#x5BF8;&#x6765;&#x663E;&#x793A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</span>
+<span class="token function">fromCharCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x4ECE;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</span>
+<span class="token function">italics</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x4F7F;&#x7528;&#x659C;&#x4F53;&#x663E;&#x793A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</span>
+<span class="token function">link</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x663E;&#x793A;&#x4E3A;&#x94FE;&#x63A5;&#x3002;</span>
+<span class="token function">localeCompare</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x7528;&#x672C;&#x5730;&#x7279;&#x5B9A;&#x7684;&#x987A;&#x5E8F;&#x6765;&#x6BD4;&#x8F83;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</span>
+<span class="token function">strike</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment" spellcheck="true">//&#x4F7F;&#x7528;&#x5220;&#x9664;&#x7EBF;&#x6765;&#x663E;&#x793A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</span>
+</code></pre>
+<p><a href="http://www.w3school.com.cn/jsref/jsref_obj_string.asp" target="_blank">&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x8BF7;&#x5230;W3c</a></p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; wentoos.com 2017 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2017-07-16 18:47:09
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="RegExp.html" class="navigation navigation-prev " aria-label="Previous page: 第一节：RegExp">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Array.html" class="navigation navigation-next " aria-label="Next page: 第三节：Array">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第二节：String","level":"5.2","depth":1,"next":{"title":"第三节：Array","level":"5.3","depth":1,"path":"content/Js/Array.md","ref":"./content/Js/Array.md","articles":[]},"previous":{"title":"第一节：RegExp","level":"5.1","depth":1,"path":"content/Js/RegExp.md","ref":"./content/Js/RegExp.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@^0.1.1","github@^2.0.0","github-buttons@2.1.0","edit-link@^2.0.2","disqus@^0.1.0","prism@^2.1.0","prism-themes@^0.0.2","advanced-emoji@^0.2.1","anchors@^0.7.1","include-codeblock@^3.0.2","ace@^0.3.2","emphasize@^1.1.0","katex@^1.1.3","splitter@^0.0.8","tbfed-pagefooter@^0.0.1","expandable-chapters-small@^0.1.7","sectionx@^3.1.0","donate@^1.0.2","local-video@^1.0.1","sitemap-general@^0.1.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","todo@^0.1.3","3-ba@^0.9.0"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © wentoos.com 2017","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-xonokai.css"]},"disqus":{"useIdentifier":false,"shortName":"gitbookuse"},"emphasize":{},"ace":{},"github":{"url":"https://github.com/wentoos/my-note"},"simple-page-toc":{"maxDepth":3,"skipFirstH1":true},"todo":{},"splitter":{},"donate":{"alipay":"https://zhangjikai.com/resource/alipay.png","alipayText":"支付宝打赏","button":"赏","title":"","wechat":"https://zhangjikai.com/resource/weixin.png","wechatText":"微信打赏"},"sitemap-general":{"prefix":"http://gitbook.zhangjikai.com"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"github-buttons":{"repo":"wentoos/my-note","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"ff100361cdce95dd4c8fb96b4009f7bc"},"expandable-chapters-small":{},"local-video":{},"advanced-emoji":{"embedEmojis":false},"include-codeblock":{"check":false,"edit":true,"fixlang":false,"lang":"","template":"ace","theme":"chrome","unindent":true},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/wentoos/my-note/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","author":"wentoos","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"web 教程","language":"zh-hans","output.name":"site","gitbook":"3.2.2","description":"记录学习之路"},"file":{"path":"content/Js/string.md","mtime":"2017-07-16T18:47:09.639Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-20T15:39:54.032Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ace/ace.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-local-video/video.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-3-ba/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

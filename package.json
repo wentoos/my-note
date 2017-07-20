@@ -37,7 +37,7 @@
     "gh-pages": "^1.0.0"
   },
   "scripts": {
-      "start": "gitbook serve",
+      "start": "gitbook serve ./ ./gh-pages",
       "build": "gitbook build ./ ./gh-pages",
       "deploy": "node ./scripts/deploy-gh-pages.js",
       "push": "npm run build && npm run deploy",

@@ -36,4 +36,8 @@
 <url> <loc>http://gitbook.zhangjikai.com/content/React/15-dom.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://gitbook.zhangjikai.com/content/React/16-lifecycle.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://gitbook.zhangjikai.com/content/React/17-Context.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://gitbook.zhangjikai.com/content/Js/RegExp.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://gitbook.zhangjikai.com/content/Js/string.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://gitbook.zhangjikai.com/content/Js/Array.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://gitbook.zhangjikai.com/content/Js/array-bianli.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>
