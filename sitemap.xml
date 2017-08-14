@@ -6,12 +6,9 @@
 <url> <loc>http://gitbook.zhangjikai.com/content/Linux/3-file-man.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://gitbook.zhangjikai.com/content/Linux/4-atom.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://gitbook.zhangjikai.com/content/Linux/5-sublime.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://gitbook.zhangjikai.com/content/Linux/6-github.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://gitbook.zhangjikai.com/content/Linux/7-hello-git.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://gitbook.zhangjikai.com/content/Linux/8-local-git.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://gitbook.zhangjikai.com/content/Linux/9-push.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://gitbook.zhangjikai.com/content/Linux/10-gitbook.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://gitbook.zhangjikai.com/content/Linux/11-markdown.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://gitbook.zhangjikai.com/content/Linux/12-webpack.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://gitbook.zhangjikai.com/content/ES6/1-hello-es6.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://gitbook.zhangjikai.com/content/ES6/2-let.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://gitbook.zhangjikai.com/content/ES6/3-const.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
@@ -39,5 +36,4 @@
 <url> <loc>http://gitbook.zhangjikai.com/content/Js/RegExp.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://gitbook.zhangjikai.com/content/Js/string.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://gitbook.zhangjikai.com/content/Js/Array.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://gitbook.zhangjikai.com/content/Js/array-bianli.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>
