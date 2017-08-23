@@ -245,3 +245,14 @@ em{
 strong{
     color:#FF6666
 }
+.book-summary ul.summary li{
+    color: #7f8c8d;
+    font-weight: 600;
+}
+.book-summary ul.summary li a{
+    color: #424242;
+    font-weight: 600;
+}
+.book-summary ul.summary li.active>a{
+    color: #42b983;
+}

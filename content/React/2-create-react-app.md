@@ -15,67 +15,38 @@ title: Git安装及设置
 
 ### 第二步 基本操作
 
-	查看已有的配置信息：git config --list  
-
-	创建 demo 文件夹：mkdir demo  
-
-	初始化：git init
-
-	将 github 上的仓库克隆到本地：git clone [仓库地址]  
-
-	查看做了哪些修改：git diff（按 q 退出）
-
-	创建a.html：touch a.html  
-
-	进入编辑.gitignore：vim .gitignore
-
-	添加：/[文件夹名]
-
-	将文件添加到缓存获得 Git 的跟踪：git add（. -A * ）
-
-	查看当前版本库各个文件的状态：git status
-
-	将缓存区内容添加到仓库中：git commit
-
-	'版本留言，尽量写的语义话'：git commit -m
-
-	查看提交记录：git log
-
-	取消已经缓存的内容：git reset
-
-	也可以通过版本号回滚：git reset --hard [版本号]
-
- 	把一个文件删除，并把它从git的仓库中移除：git rm [文件名]
-
-	取消对某个文件的修改：git checkout [文件名]
-
-	忽略上传的文件：vi.gitignore
-
-	创建新分支：git branch [yourbranch]
-
-	切换分支：git checkout [yourbranch]
-
-	或者直接创建一个分支，并且切换过去：
-	git checkout -b [yourbranch]
-
-	删除分支：git branch -d [yourbranch]
-
-	推送分支：git push origin [yourbranch]
+1. 查看已有的配置信息：git config --list  
+1. 创建 demo 文件夹：mkdir demo  
+1. 初始化：git init
+1. 将 github 上的仓库克隆到本地：git clone [仓库地址]  
+1. 查看做了哪些修改：git diff（按 q 退出）
+1. 创建a.html：touch a.html  
+1. 进入编辑.gitignore：vim .gitignore
+1. 添加：/[文件夹名]
+1. 将文件添加到缓存获得 Git 的跟踪：git add（. 1. 1. ）
+1. 查看当前版本库各个文件的状态：git status
+1. 将缓存区内容添加到仓库中：git commit
+1. '版本留言，尽量写的语义话'：git commit -m
+1. 查看提交记录：git log
+1. 取消已经缓存的内容：git reset
+1. 也可以通过版本号回滚：git reset --hard [版本号]
+1. 把一个文件删除，并把它从git的仓库中移除：git rm [文件名]
+1. 取消对某个文件的修改：git checkout [文件名]
+1. 忽略上传的文件：vi.gitignore
+1. 创建新分支：git branch [yourbranch]
+1. 切换分支：git checkout [yourbranch]
+1. 或者直接创建一个分支，并且切换过去
+1. git checkout -b [yourbranch]
+1. 删除分支：git branch -d [yourbranch]
+1. 推送分支：git push origin [yourbranch]
 
 ### 第三步 推送代码
-
-	首次推送：git push -u origin master  
-
-	之后可以省略参数：git push
-
-	如果没有通过 clone 现有仓库，而是直接在本地 git init 的仓库的话，需要先添加远程仓库地址。
-
-	为这个仓库添加一个远程地址：git remote add origin [你的github上的仓库地址]
-
-	设置 public key
-		首先需要在本地机器上生成 key：ssh-keygen  
-
-		这时，会在 ~/.ssh/ 文件夹之下生成一对 ssh key ，包括一个 public key 和一个 private key 。（如果是windows用户，这个文件一般会在这里：C:\Users\Administrator.ssh）
+1. 首次推送：git push -u origin master  
+1. 之后可以省略参数：git push
+1. 如果没有通过 clone 现有仓库，而是直接在本地 git init 的仓库的话，需要先添加远程仓库地址。
+1. 为这个仓库添加一个远程地址：git remote add origin [你的github上的仓库地址]
+1. 设置 public key
+ 	首先需要在本地机器上生成 key：ssh-keygen 这时，会在 ~/.ssh/ 文件夹之下生成一对 ssh key ，包括一个 public key 和一个 private key （如果是windows用户，这个文件一般会在这里：C:\Users\Administrator.ssh）
 
 		复制 public key：cat ~/.ssh/id_rsa.pub  
 
@@ -87,7 +58,7 @@ title: Git安装及设置
 
 ### 第一步 安装nvm
 
-	linux：curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash  
+	linux：curl -o1. https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash  
 
 	windows：node官网下载相应版本安装
 
@@ -97,7 +68,7 @@ title: Git安装及设置
 
 		安装版本 v5.10.1：nvm install v5.10.1
 
-### 第二步 设置nodo
+### 第二步 设置node
 
 	查看版本：node -v
 
@@ -154,7 +125,7 @@ title: Git安装及设置
 ## 配置package.json文件
 
 scriptes脚本中写入run命令
-```
+```json
 "scripts": {
     "build": "rimraf dist && ./node_modules/.bin/webpack --config webpack.prod.config.js",
     "dev": "./node_modules/.bin/webpack-dev-server --config webpack.dev.config.js"
@@ -164,15 +135,15 @@ scriptes脚本中写入run命令
 
 创建隐藏配置文件
 
-```
+```js
 vi .npmrc
 ```
 
-找到**.npmrc.swp**
+找到 **.npmrc.swp**
 
-输入**i**进入插入模式，将下面文字放入
+输入 **i** 进入插入模式，将下面文字放入
 
-```
+```js
 loglevel=http
 ```
 
@@ -180,6 +151,6 @@ loglevel=http
 
 ## 安装React出错（环境配置出错），在命令行执行下面命令
 
-```
+```js
 npm config set cache C:\[用户名]\nodejs\npm-cache --global
 ```

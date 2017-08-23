@@ -32,7 +32,7 @@ repository = project + history
 ## 搭建 Github 网站
 
 创建一个仓库，仓库的名字是有严格规定的，
-```
+```js
 username.github.io
 ```
 把 username 替换成自己的自己的用户名。例如我叫 l ，我要创建的仓库名就是
@@ -53,3 +53,7 @@ Initialize this repository with a README
 添加一些基本的 html 内容进 index.html ，然后点 “Commit New File” 进行保存。
 
 注意：新添加的内容，不一定立刻能显示到 wentoos.github.io ，可能会有五六分钟的延迟。
+
+## 参考：
+
+ - Github官网：[点击进入](https://github.com/)

@@ -15,7 +15,7 @@ title: 文件操作
 
 ### 文件夹
 
-```
+```js
 mkdir project
 ```
 
@@ -23,7 +23,7 @@ mkdir project
 
 进入这个项目文件夹
 
-```
+```js
 cd project
 ```
 
@@ -34,7 +34,7 @@ cd project
 
 ### 文件
 
-```
+```js
 touch fileName
 ```
 
@@ -42,7 +42,7 @@ touch fileName
 
 但是，一般我们都是用 atom 编辑器来创建文件。
 
-```
+```js
 atom .
 ```
 
@@ -52,13 +52,13 @@ atom .
 
 ### 删除一个文件
 
-```
+```js
 rm fileName
 ```
 
 ### 删除一个文件夹
 
-```
+```js
 rm -r folderName
 ```
 
@@ -68,13 +68,13 @@ rm -r folderName
 
 移动用到的是 `mv` 命令
 
-```
+```js
 mv 被移动的文件或者文件夹的路径  目标文件夹位置
 ```
 
 ### 重命名
 
-```
+```js
 mv 被移动的文件或者文件夹的路径  不存在的位置/文件名
 ```
 
@@ -84,13 +84,13 @@ mv 被移动的文件或者文件夹的路径  不存在的位置/文件名
 
 用 `cp` 这个命令。
 
-```
+```js
 cp 被拷贝的的文件  目标位置
 ```
 
 ### 拷贝文件夹
 
-```
+```js
 cp -r 被拷贝的的文件夹 目标位置
 ```
 
@@ -98,11 +98,11 @@ cp -r 被拷贝的的文件夹 目标位置
 
 把 aaa/ 文件夹中的所有文件，都拷贝到 bbb 文件夹中
 
-```
+```js
 $ ls aaa
 aa bb cc
 $ ls bbb
-$ mv  aaa/* bbb
+$ mv  aaa // bbb
 $ ls aaa
 $ ls bbb
 aa bb cc
@@ -113,20 +113,20 @@ aa bb cc
 
 普通用户就是我们默认登录用户，例如 wentoos 。超级用户就是管理员。普通用户可以化身超级用户。这个化身的方式是
 
-```
+```js
 sudo rm fileName
 ```
 
 上面的命令可以用超级用户权限来执行一个命令。
 
 
-```
+```js
 sudo su
 ```
 
 可以直接化身超级用户。
 
-```
+```js
 $ sudo su
 $ whoami
 root
